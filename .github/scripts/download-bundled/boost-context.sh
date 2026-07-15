@@ -41,3 +41,6 @@ mv make_x86_64_ms_pe_gas.asm make_x86_64_ms_pe_gas.S
 # add extra files
 git restore LICENSE
 git restore save_xmm_x86_64_ms_masm.asm # added in GH-18352, not an upstream boost.context file
+
+# patch customized files
+git apply -v ../../.github/scripts/download-bundled/boost-context.patch
